@@ -3,3 +3,87 @@
 	padding: 0;
 	border: 0;
 }
+
+.header {
+	max-width: 1140px;
+	height: 60px;
+	margin: 0 auto;
+}
+
+.logo-img {
+	float: left;
+	padding-top: 10px;
+	padding-right: 260px;
+}
+
+
+.menu li {
+	float: left;
+	list-style: none;
+	padding-top: 25px;
+}
+
+.menu a {
+	text-decoration: none;
+	color: #000;
+	font-size: 15px;
+	padding-right:  35px;
+}
+
+h1 {
+	padding-bottom: 20px;
+	text-align: center;
+	font-size: 333%;
+	color: #fff;
+}
+
+h2 {
+	margin: 44% 0;
+	text-align: center;
+	font-size: 222%;
+}
+
+h5 {
+	text-align: center;
+	font-size: 111%;
+	color: #fff;
+}
+
+.img {
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 100px;
+}
+
+p {
+	text-align: center;
+	padding-top: 10%;
+	padding-bottom: 15%;
+}
+
+.get-started {
+	color: #fff;
+	padding: 2%;
+	border-radius: 30px;
+	text-decoration: none;
+	background-color: #ffa500;
+}
+
+.parallax {
+	background: url("images/background-photo.jpg") repeat fixed 100%;
+}
+
+.parallax-inner {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+.another-logos {
+	height: 99px;
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+.another-logos a {
+	padding-left: 60px;
+}
