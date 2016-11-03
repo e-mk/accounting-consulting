@@ -175,7 +175,7 @@ body {
 	margin-top: 100px;
 	margin-bottom: 20px;
 }
-.line {
+.line, .team-line, .customers-line {
 	width: 95px;
 	height: 1px;
 	margin: 10px auto;
@@ -198,7 +198,6 @@ body {
 
 .ipsum {
 	margin: 0;
-	border-bottom: 1px solid grey;
 	padding-bottom:100px;
 }
 
@@ -237,7 +236,7 @@ body {
 }
 
 .story {
-	margin: 0 100px;
+	margin: 0 20%;
 	overflow:hidden;
 }
 
@@ -248,10 +247,11 @@ body {
 
 .story img {
 	float:right;
-	
+	margin-bottom: 70px;
 }
 
 .our-story h2 {
+	margin-top: 10px;
 	text-align:left; 
 }
 
@@ -263,4 +263,20 @@ body {
 
 .our-story .line {
 	margin-left:0;
+}
+
+.fixed-image {
+	position: absolute;
+	width: 100%;
+	height: 550px;
+	opacity: 0.6;
+}
+
+.our-team {
+	position: relative;
+}
+
+.images {
+	padding: 40px;
+	border-radius: 150px;
 }
