@@ -78,7 +78,7 @@ body {
 
 .parallax1 {
 	background: url(../images/background_image.jpg) repeat fixed 100%;
-	height: 650px;
+	min-height: 650px;
 }
 
 .parallax-inner1 {
@@ -235,7 +235,6 @@ body {
 
 .story img {
 	float:right;
-	margin-bottom: 70px;
 }
 
 .our-story h2 {
@@ -253,15 +252,15 @@ body {
 	margin-left:0;
 }
 
-.fixed-image {
-	position: absolute;
-	width: 100%;
-	height: 550px;
-	opacity: 0.6;
+.our-team {
+	background: url(../images/background_image.jpg) no-repeat;
+	min-height: 550px;
+	opacity: 0.8;
+	max-width: 100%;
 }
 
-.our-team {
-	position: relative;
+.our-team h2 {
+	padding-top: 70px;
 }
 
 .images {
@@ -310,16 +309,17 @@ body {
 .parallax {
 	background: url(../images/background_image.jpg) repeat fixed 100%;
 	opacity: 0.8;
-	height: 444px;
+	min-height: 444px;
 }
 
 .parallax-inner {
-	margin: 0 auto;
+	max-width: 1250px;
+	margin: auto;
 }
 
 .parallax-inner h2 {
 	margin: auto;
-	width: 800px;
+	max-width: 800px;
 	color: white;
 	text-align: center;
 	font-size: 40px;
