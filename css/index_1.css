@@ -50,7 +50,7 @@ body {
 	padding-top: 22px;
 }
 
-#img {
+.inner-menu img {
 	float:left;
 }
 
@@ -66,6 +66,24 @@ body {
 	font-size: 17px;
 	list-style: none;
 	padding-left: 40px;
+}
+
+@media screen and (max-width: 972px){
+	.inner-menu img {
+		float: none;
+	}
+	.menu {
+		height: 232px;
+	}
+	.inner-menu ul {
+		float: none;
+		padding-left: 10px;
+	}
+	.inner-menu ul li {
+		display: block;
+		list-style: none;
+		padding-left:0;
+	}
 }
 
 .inner-menu a {
@@ -109,8 +127,7 @@ body {
 .get-started {
 	text-align:center;
 	color: white;
-	background-color:#FEA252;
-	opacity: 0.8;
+	background-color: rgba(254, 162, 82, 0.7);
 	border: 4px solid #FEA252;
 	border-radius: 54px;
 	width: 200px;
@@ -130,6 +147,7 @@ body {
 .get-started:hover {
 	opacity: 1;
 	cursor: pointer;
+	background-color: rgba(254, 162, 82, 1);
 }
 
 .Our {
@@ -145,18 +163,42 @@ body {
 .ul-width {
 	max-width: 1250px;
 	margin: auto;
+	overflow: hidden;
+	width: 80%;
 }
 
-.companies ul {
+.companies img {
 	display: block;
-	margin: auto;
-	max-width: 70%;
+	margin: 0 auto;
+	opacity: 0.6;
 }
 
-.companies li {
-	display: inline;
-	padding-left: 18px;
-	opacity: 0.6;
+.companies img:hover {
+	opacity: 1;
+}
+
+.companies a {
+	float:left;
+	display: block;
+	width: 16%;
+}
+
+@media screen and (max-width: 1060px){
+	.ul-width {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 825px){
+	.companies a {
+		width: 33%;
+	}
+}
+
+@media screen and (max-width: 421px){
+	.companies a {
+		width: 50%;
+	}
 }
 
 .companies li:hover {
@@ -209,8 +251,19 @@ body {
 
 .lorem-ipsum {
 	float: left;
-	width: 325px;
-	padding-left: 70px;
+	width: 30%;
+	padding: 0 20px;
+	margin: auto;
+	max-width: 400px;
+}
+
+@media screen and (max-width: 1231px){
+	.lorem-ipsum {
+		width: 48%;
+		margin: auto;
+		float: none;
+		margin-top: 20px;
+	}
 }
 
 .lorem-ipsum img {
@@ -252,6 +305,25 @@ body {
 	margin-left:0;
 }
 
+@media screen and (max-width: 1143px){
+	.story img {
+		width: 100%;
+		height: auto;
+		float: none;
+		display: block;
+		margin: auto;
+	}
+	.our-story {
+		float: none;
+		margin: auto;
+	}
+
+}
+@media screen and (max-width: 587px){
+	.our-story {
+		width: 100%;
+	}
+}
 .our-team {
 	background: url(../images/background_image.jpg) no-repeat;
 	min-height: 550px;
@@ -275,8 +347,18 @@ body {
 }
 
 .customer {
-	width: 400px;
+	width: 30%;
+	max-width: 400px;
 	float: left;
+	padding: 0 20px;
+}
+
+@media screen and (max-width: 1231px){
+	.customer {
+		float: none;
+		margin: auto;
+		width: 40%;
+	}
 }
 
 .customer h5 {
@@ -298,8 +380,6 @@ body {
 }
 
 .customer p {
-	width: 340px;
-	padding-left: 30px;
 	line-height: 2;
 	font-size: 17px;
 	text-align: center;
@@ -327,7 +407,7 @@ body {
 }
 
 .address {
-	width: 900px;
+	width: 80%;
 	margin: 100px auto;
 }
 
@@ -349,7 +429,15 @@ body {
 }
 .cont {
 	float: left;
-	width: 300px;
+	width: 33%;
+}
+
+@media screen and (max-width: 620px)
+{
+	.cont {
+		float: none;
+		margin: auto;
+	}
 }
 .cont a {
 	text-decoration:none;
@@ -360,9 +448,13 @@ body {
 	text-decoration: none;
 }
 
+iframe {
+	width: 100%;
+}
+
 .footer {
 	background-color: #0D3C55;
-	height: 222px;
+	height: auto;;
 }
 
 .footer p {
@@ -372,25 +464,48 @@ body {
 	color: white;
 }
 
-.footer ul {
-	display: block;
-	margin-left: 45%;
+.footer-icons {
+	width: 150px;
+	margin: 10px auto;
+	padding-left: 0;
+	overflow: hidden;
 }
 
-.footer li {
-	display: inline;
-	margin: 4px;
+.footer-icons img {
+	display: block;
+	margin: auto;
 }
+
+.footer-icons a {
+	width: 28%;
+	height: auto;
+	display: block;
+	float: left;
+	margin: 3px;
+	
+}
+
+/*.footer li {
+	display: inline-block;
+	width: 27%;
+	margin: 1px;
+}*/
 
 .footer-line {
 	margin: auto;
-	width: 1100px;
-	border-bottom: 1px solid blue;
+	width: 80%;
+	border-bottom: 1px solid grey;
+}
+
+.published {
+	width: 18%;
+	margin:  auto;
+	margin-bottom: 10px;
+	overflow: hidden;
 }
 
 .cyclop {
 	border-radius: 20px;
-	margin-left: 43%;
 	margin-top: 10px;
 	float: left;
 	margin-right: 10px;
@@ -398,4 +513,27 @@ body {
 
 .footer h6 {
 	color: white;
+	float: left;
+}
+
+@media screen and (max-width: 766px){
+	.footer ul li{
+		
+	}
+}
+
+@media screen and (max-width: 1365px){
+	.published {
+		margin-top: 10px;
+	}
+	.footer h6 {
+		float: none;
+		text-align: center;
+	}
+	
+	.footer img {
+		float: none;
+		margin: auto;
+		display: block;
+	}
 }
